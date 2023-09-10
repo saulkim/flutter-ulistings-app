@@ -1,0 +1,53 @@
+{
+    "universal_categories": {
+        "11pMPqVV53qUsacuF6N1YD": {
+            "title": "Restaurants",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmNpI06fWGbLnhAIP6CzG4T8v_ro8XY7_idUtuAbgQxBmDy43O",
+            "name": "Restaurants",
+            "order": "1",
+            "id": "11pMPqVV53qUsacuF6N1YD"
+        },
+        "88pNxhccktxkSgIndZ8e": {
+            "photo": "https://o.aolcdn.com/images/dims3/GLOB/crop/5581x3659+0+130/resize/1028x675!/format/jpg/quality/85/http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F355bcf8dbde723035897898429f9e436%2F206412480%2Faerial-view-of-various-coffee-picture-id938993594",
+            "name": "Coffee Shops",
+            "order": "2",
+            "id": "88pNxhccktxkSgIndZ8e",
+            "title": "Coffee Shops"
+        },
+        "89sM0nIDtlLZxlvs2pPIAt": {
+            "title": "Shopping",
+            "name": "Shopping",
+            "photo": "https://cpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/d/11771/files/2016/10/Shopping-from-Huffington-post-1ka98ph.jpg",
+            "order": "3",
+            "id": "89sM0nIDtlLZxlvs2pPIAt"
+        },
+        "OyGmw2QiLYgY4y1v9B2V": {
+            "title": "Pubs",
+            "photo": "https://media-cdn.tripadvisor.com/media/photo-s/0c/59/18/5e/don-pub.jpg",
+            "name": "Pubs",
+            "order": "4",
+            "id": "OyGmw2QiLYgY4y1v9B2V"
+        },
+        "wxHH0kJnCExOI6sHaXvX": {
+            "title": "Bars",
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VHJFFlalEZBoh42z7HaRXgDsvAS575SssChtBSoDneIfq50V7g",
+            "name": "Bars",
+            "order": "5",
+            "id": "wxHH0kJnCExOI6sHaXvX"
+        },
+        "zGhiepckNthq5FILtM4Eb": {
+            "title": "Hair Salons",
+            "photo": "https://img.grouponcdn.com/deal/sGUZozouE9Zvs4UmAkch/dy-700x420/v1/c700x420.jpg",
+            "name": "Hair Salons",
+            "order": "6",
+            "id": "zGhiepckNthq5FILtM4Eb"
+        },
+        "zzq4LngLd8PWzYJfsvnjfV": {
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnoKaagj1JYuzPWpVRUrK-CzGYbj9xdoYpgG7ltZN7CUsVFhMb5Q",
+            "name": "Gas Stations",
+            "order": "7",
+            "id": "zzq4LngLd8PWzYJfsvnjfV",
+            "title": "Gas Stations"
+        }
+    }
+}
