@@ -29,6 +29,7 @@ class LoginWithPhoneNumberEvent extends AuthenticationEvent {
 }
 
 class SignupWithEmailAndPasswordEvent extends AuthenticationEvent {
+  String? favoriteBathroom;
   String emailAddress;
   String password;
   File? image;
@@ -40,7 +41,8 @@ class SignupWithEmailAndPasswordEvent extends AuthenticationEvent {
       required this.password,
       this.image,
       this.firstName = 'Anonymous',
-      this.lastName = 'User'});
+      this.lastName = 'User',
+      this.favoriteBathroom = 'favoriteBathroom'});
 }
 
 class LogoutEvent extends AuthenticationEvent {

@@ -26,7 +26,7 @@ class _SignUpState extends State<SignUpScreen> {
   File? _image;
   final TextEditingController _passwordController = TextEditingController();
   final GlobalKey<FormState> _key = GlobalKey();
-  String? firstName, lastName, email, password, confirmPassword;
+  String? favoriteBathroom, firstName, lastName, email, password, confirmPassword;
   AutovalidateMode _validate = AutovalidateMode.disabled;
   bool acceptEULA = true;
 
@@ -76,7 +76,8 @@ class _SignUpState extends State<SignUpScreen> {
                             password: password!,
                             image: _image,
                             lastName: lastName,
-                            firstName: firstName));
+                            firstName: firstName,
+                            favoriteBathroom: favoriteBathroom));
                   } else if (state is SignUpFailureState) {
                     showSnackBar(context, state.errorMessage);
                   }
@@ -186,7 +187,7 @@ class _SignUpState extends State<SignUpScreen> {
                                 textCapitalization: TextCapitalization.words,
                                 validator: validateName,
                                 onSaved: (String? val) {
-                                  firstName = val;
+                                  favoriteBathroom = val;
                                 },
                                 textInputAction: TextInputAction.next,
                                 decoration: getInputDecoration(

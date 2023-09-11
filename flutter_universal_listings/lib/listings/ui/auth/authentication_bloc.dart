@@ -99,7 +99,8 @@ class AuthenticationBloc
               password: event.password,
               image: event.image,
               firstName: event.firstName,
-              lastName: event.lastName);
+              lastName: event.lastName,
+              favoriteBathroom: event.favoriteBathroom,);
       if (result != null && result is ListingsUser) {
         user = result;
         emit(AuthenticationState.authenticated(user!));

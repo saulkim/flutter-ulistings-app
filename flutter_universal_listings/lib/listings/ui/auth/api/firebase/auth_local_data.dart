@@ -73,7 +73,8 @@ class AuthLocalData extends AuthenticationRepository {
       required String password,
       File? image,
       firstName = 'Anonymous',
-      lastName = 'User'}) {
+      lastName = 'User',
+        favoriteBathroom = 'favoriteBathroom'}) {
     // TODO: implement signUpWithEmailAndPassword
     throw UnimplementedError();
   }

@@ -4,6 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 class User with ChangeNotifier {
+  String favoriteBathroom;
+
   String email;
 
   String firstName;
@@ -29,7 +31,8 @@ class User with ChangeNotifier {
   String appIdentifier;
 
   User(
-      {this.email = '',
+      {this.favoriteBathroom = '',
+        this.email = '',
       this.firstName = '',
       this.phoneNumber = '',
       this.lastName = '',
@@ -53,6 +56,7 @@ class User with ChangeNotifier {
 
   factory User.fromJson(Map<String, dynamic> parsedJson) {
     return User(
+        favoriteBathroom: parsedJson['favoriteBathroom'] ?? '',
         email: parsedJson['email'] ?? '',
         firstName: parsedJson['firstName'] ?? '',
         lastName: parsedJson['lastName'] ?? '',
@@ -71,6 +75,7 @@ class User with ChangeNotifier {
 
   Map<String, dynamic> toJson() {
     return {
+      'favoriteBathroom' : favoriteBathroom,
       'email': email,
       'firstName': firstName,
       'lastName': lastName,

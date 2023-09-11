@@ -220,7 +220,8 @@ class AuthFirebaseUtils extends AuthenticationRepository {
       required String password,
       File? image,
       firstName = 'Anonymous',
-      lastName = 'User'}) async {
+      lastName = 'User',
+        favoriteBathroom = 'favoriteBathroom'}) async {
     try {
       auth.UserCredential result = await auth.FirebaseAuth.instance
           .createUserWithEmailAndPassword(

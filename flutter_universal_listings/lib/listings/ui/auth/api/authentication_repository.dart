@@ -38,7 +38,8 @@ abstract class AuthenticationRepository {
       required String password,
       File? image,
       firstName = 'Anonymous',
-      lastName = 'User'});
+      lastName = 'User',
+        favoriteBathroom = 'favoriteBathroom'});
 
   /// Logs the [user] of the system
   logout(ListingsUser user);

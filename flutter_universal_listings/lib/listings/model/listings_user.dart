@@ -10,6 +10,7 @@ class ListingsUser extends User {
   List<String> likedListingsIDs;
 
   ListingsUser({
+    favoriteBathroom = '',
     email = '',
     userID = '',
     profilePictureURL = '',
@@ -23,6 +24,7 @@ class ListingsUser extends User {
     this.isAdmin = false,
     this.likedListingsIDs = const [],
   }) : super(
+    favoriteBathroom: favoriteBathroom,
           firstName: firstName,
           lastName: lastName,
           userID: userID,
@@ -40,6 +42,7 @@ class ListingsUser extends User {
 
   factory ListingsUser.fromJson(Map<String, dynamic> parsedJson) {
     return ListingsUser(
+      favoriteBathroom: parsedJson['favoriteBathroom'] ?? '',
       email: parsedJson['email'] ?? '',
       firstName: parsedJson['firstName'] ?? '',
       lastName: parsedJson['lastName'] ?? '',
@@ -63,6 +66,7 @@ class ListingsUser extends User {
   @override
   Map<String, dynamic> toJson() {
     return {
+      'favoriteBathroom' : favoriteBathroom,
       'email': email,
       'firstName': firstName,
       'lastName': lastName,
