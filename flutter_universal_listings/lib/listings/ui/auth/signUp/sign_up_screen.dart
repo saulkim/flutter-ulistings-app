@@ -178,6 +178,29 @@ class _SignUpState extends State<SignUpScreen> {
                                 ],
                               ),
                             ),
+                            // ***NEW CODE***
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 16.0, right: 8.0, left: 8.0),
+                              child: TextFormField(
+                                textCapitalization: TextCapitalization.words,
+                                validator: validateName,
+                                onSaved: (String? val) {
+                                  firstName = val;
+                                },
+                                textInputAction: TextInputAction.next,
+                                decoration: getInputDecoration(
+                                  hint: 'What is your favorite bathroom\n you’ve used?'.tr(),
+                                  darkMode: isDarkMode(context),
+                                  errorColor:
+                                  Theme.of(context).colorScheme.error,
+                                  colorPrimary: Color(colorPrimary),
+                                ),
+                                minLines: 2,
+                                maxLines: null,
+
+                              ),
+                            ),
                             Padding(
                               padding: const EdgeInsets.only(
                                   top: 16.0, right: 8.0, left: 8.0),
